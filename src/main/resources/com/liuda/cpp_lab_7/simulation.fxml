@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.layout.ColumnConstraints?>
+<?import javafx.scene.layout.GridPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.RowConstraints?>
+
+<GridPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="600.0" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.liuda.cpp_lab_7.controller.SimulationController">
+  <columnConstraints>
+    <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+  </columnConstraints>
+  <rowConstraints>
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+    <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+  </rowConstraints>
+   <children>
+      <TableView fx:id="tableView" prefHeight="200.0" prefWidth="200.0" />
+      <HBox prefHeight="100.0" prefWidth="200.0" spacing="32.0" GridPane.rowIndex="1">
+         <children>
+            <Button fx:id="btnResume" mnemonicParsing="false" onAction="#onBtnResumeClick" style="-fx-background-color: #2A80E6;" text="Resume" textFill="WHITE">
+               <padding>
+                  <Insets bottom="8.0" left="32.0" right="32.0" top="8.0" />
+               </padding>
+            </Button>
+            <Button fx:id="btnSuspend" mnemonicParsing="false" onAction="#onBtnSuspendClick" text="Suspend">
+               <padding>
+                  <Insets bottom="8.0" left="32.0" right="32.0" top="8.0" />
+               </padding>
+            </Button>
+         </children>
+         <padding>
+            <Insets top="32.0" />
+         </padding>
+      </HBox>
+   </children>
+   <padding>
+      <Insets left="16.0" right="16.0" top="16.0" />
+   </padding>
+</GridPane>
